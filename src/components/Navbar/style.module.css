@@ -1,0 +1,119 @@
+.navbar {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(60, 41, 167, 1) 0%,
+    rgba(27, 91, 154, 1) 100%,
+    rgba(30, 64, 71, 1) 100%,
+    rgba(28, 63, 99, 1) 100%
+  );
+  padding: 0.3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 100;
+}
+.container {
+  width: 80%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.logoAndLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+}
+.logo a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-left: 10px;
+  color: #fff;
+}
+.navLinks {
+  display: flex;
+}
+.navLink {
+  list-style: none;
+  margin-left: 1rem;
+}
+.navLink a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.navLink a:hover {
+  transform: translateY(10px);
+  border-bottom: 1px solid #fff;
+}
+
+.subNav {
+  align-items: center;
+  display: flex;
+}
+
+.login {
+  display: flex;
+}
+
+.login a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  border: 1px solid #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.login a:hover {
+  transform: scale(1.1);
+}
+.login p {
+  display: block;
+  font-weight: bold;
+  padding: 0;
+}
+.shoppingCartContainer {
+  position: relative;
+  margin-right: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.shoppingCartContainer a {
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 8px 15px;
+  color: gold;
+  margin-left: 1rem;
+}
+
+.shoppingCartContainer:hover {
+  transform: scale(1.1);
+}
+
+.shoppingCartItemsCount {
+  position: absolute;
+  top: -15px;
+  right: -20px;
+  padding: 8px 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  color: black;
+  font-size: 10px;
+}
