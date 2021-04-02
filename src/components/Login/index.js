@@ -29,8 +29,16 @@ const Login = (props) => {
         </Form>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Login</Button>
-        <Button variant="danger" onClick={props.onHide}>
+        <Button
+          href="#"
+          onClick={() => {
+            props.onHide();
+            props.toggleLoggedIn();
+          }}
+        >
+          Login
+        </Button>
+        <Button href="#" variant="danger" onClick={props.onHide}>
           Close
         </Button>
       </Modal.Footer>

@@ -15,7 +15,8 @@ const Products = () => {
           setProducts(data.data);
           setIsLoading(true);
         })
-        .catch((err) => console.log(err)),
+        .catch((err) => setIsLoading(false))
+        .finally(setIsLoading(false)),
     []
   );
   return (

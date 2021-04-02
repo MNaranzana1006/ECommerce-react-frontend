@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import css from "./style.module.css";
 import { FaShoppingCart, FaShopify } from "react-icons/fa";
 
 const Navbar = (props) => {
-  const [loggedIn, setLoggedIn] = useState(false);
-
-  const toggleLoggedIn = (e) => {
-    e.preventDefault();
-    setLoggedIn(!loggedIn);
-  };
   return (
     <nav className={css.navbar}>
       <div className={css.container}>
@@ -29,16 +23,16 @@ const Navbar = (props) => {
           </ul> */}
         </div>
         <div className={css.subNav}>
-          {loggedIn ? (
+          {props.loggedIn ? (
             <div className={css.login}>
-              <Link to="/">Munkhbaatar</Link>
-              <Link to="/logout" onClick={toggleLoggedIn}>
+              <Link to="#">Munkhbaatar</Link>
+              <Link to="#" onClick={props.toggleLoggedIn}>
                 Log Out
               </Link>
             </div>
           ) : (
             <div className={css.login}>
-              <Link to="/login" onClick={props.showLoginModal}>
+              <Link to="#" onClick={props.showLoginModal}>
                 Log In
               </Link>
               <Link to="/signUp">Sign Up</Link>

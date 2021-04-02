@@ -8,7 +8,7 @@ const Product = (props) => {
         <img src={props.product.zurag} alt="img" />
       </div>
       <div className={css.productDescription}>
-        <a href="/products/productId" className={css.productName}>
+        <a href={`product/${props.product.id}`} className={css.productName}>
           {props.product.ner}
         </a>
         <p className={css.productPrice}>{props.product.price}.00 $</p>
